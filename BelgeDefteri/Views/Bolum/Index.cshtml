@@ -3,9 +3,18 @@
 }
 <div ng-app="belgeDefteriApp" ng-controller="bolumCtrl">
     <h2>{{mesaj}}</h2>
+
+    <table>
+        <tr ng-repeat="data in myData">
+            <td>
+                {{data.KursName}}
+            </td>
+        </tr>
+    </table>
+
 </div>
 
 @section Scripts
     {
     <script src="~/App/Bolum/bolumCtrl.js"></script>
-}
+}   
