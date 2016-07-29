@@ -18,7 +18,7 @@ namespace BelgeDefteri.Data.Entity
         /// grop tablosundan Parentı Kurs olan
         /// item Id gelecek
         /// </summary>
-        public string KursNameId { get; set; }
+        public string KursName { get; set; }
 
         public virtual ICollection<Kursiyer> Kursiyer { get; set; }
         public virtual ICollection<Devamsizlik> Devamsizlik { get; set; }

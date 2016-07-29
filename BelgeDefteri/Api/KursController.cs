@@ -20,7 +20,7 @@ namespace BelgeDefteri.Api
             /*
              modelden dataya aktarım
              */
-            data.KursNameId = model.name;
+            data.KursName = model.name;
             data.BelgeAdi = model.belgeAdi;
             data.BaslamaTarihi = model.baslamaTarihi;
             data.BitisTarihi = model.bitisTarihi;
