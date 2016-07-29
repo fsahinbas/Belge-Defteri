@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace BelgeDefteri.Data.Entity
 {
-    public class Repository<T>:IDisposable where T : BaseEntity
+    public class Repository<T> : IDisposable where T : BaseEntity
     {
         public ApplicationDbContext _context;
         public DbSet<T> _repo;
@@ -15,7 +15,7 @@ namespace BelgeDefteri.Data.Entity
         public Repository()
         {
             _context = new ApplicationDbContext();
-            _repo = _context.Set<T>();          
+            _repo = _context.Set<T>();
         }
 
         public IQueryable<T> GetAll()
@@ -33,7 +33,7 @@ namespace BelgeDefteri.Data.Entity
         {
             if (data == null)
                 throw (new Exception("No Data"));
-            _repo.Remove(data);           
+            _repo.Remove(data);
             _context.SaveChanges();
         }
         public void update(T data)
@@ -45,6 +45,12 @@ namespace BelgeDefteri.Data.Entity
             _context.Entry(data).State = EntityState.Modified;
             _context.SaveChanges();
         }
+        
+        public void SaveChanges()
+        {
+            _context.SaveChanges();
+        }
+      
         public void Insert(T data)
         {
             if (data == null)
@@ -59,7 +65,7 @@ namespace BelgeDefteri.Data.Entity
 
         public void Dispose()
         {
-            if (_context==null)
+            if (_context == null)
             {
                 return;
             }

@@ -27,3 +27,32 @@ c:\users\sahinbas\documents\visual studio 2013\Projects\BelgeDefteri\BelgeDefter
 c:\users\sahinbas\documents\visual studio 2013\Projects\BelgeDefteri\BelgeDefteri.Data\obj\Debug\BelgeDefteri.Data.csprojResolveAssemblyReference.cache
 c:\users\sahinbas\documents\visual studio 2013\Projects\BelgeDefteri\BelgeDefteri.Data\bin\Debug\Microsoft.Owin.Host.SystemWeb.dll
 c:\users\sahinbas\documents\visual studio 2013\Projects\BelgeDefteri\BelgeDefteri.Data\bin\Debug\Microsoft.Owin.Host.SystemWeb.xml
+C:\Proje\Belge-Defteri\BelgeDefteri.Data\bin\Debug\BelgeDefteri.Data.dll.config
+C:\Proje\Belge-Defteri\BelgeDefteri.Data\bin\Debug\BelgeDefteri.Data.dll
+C:\Proje\Belge-Defteri\BelgeDefteri.Data\bin\Debug\BelgeDefteri.Data.pdb
+C:\Proje\Belge-Defteri\BelgeDefteri.Data\bin\Debug\EntityFramework.dll
+C:\Proje\Belge-Defteri\BelgeDefteri.Data\bin\Debug\EntityFramework.SqlServer.dll
+C:\Proje\Belge-Defteri\BelgeDefteri.Data\bin\Debug\Microsoft.AspNet.Identity.Core.dll
+C:\Proje\Belge-Defteri\BelgeDefteri.Data\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Proje\Belge-Defteri\BelgeDefteri.Data\bin\Debug\Microsoft.AspNet.Identity.Owin.dll
+C:\Proje\Belge-Defteri\BelgeDefteri.Data\bin\Debug\Microsoft.Owin.dll
+C:\Proje\Belge-Defteri\BelgeDefteri.Data\bin\Debug\Microsoft.Owin.Host.SystemWeb.dll
+C:\Proje\Belge-Defteri\BelgeDefteri.Data\bin\Debug\Microsoft.Owin.Security.Cookies.dll
+C:\Proje\Belge-Defteri\BelgeDefteri.Data\bin\Debug\Microsoft.Owin.Security.dll
+C:\Proje\Belge-Defteri\BelgeDefteri.Data\bin\Debug\Microsoft.Owin.Security.OAuth.dll
+C:\Proje\Belge-Defteri\BelgeDefteri.Data\bin\Debug\Newtonsoft.Json.dll
+C:\Proje\Belge-Defteri\BelgeDefteri.Data\bin\Debug\Owin.dll
+C:\Proje\Belge-Defteri\BelgeDefteri.Data\bin\Debug\EntityFramework.xml
+C:\Proje\Belge-Defteri\BelgeDefteri.Data\bin\Debug\EntityFramework.SqlServer.xml
+C:\Proje\Belge-Defteri\BelgeDefteri.Data\bin\Debug\Microsoft.AspNet.Identity.Core.xml
+C:\Proje\Belge-Defteri\BelgeDefteri.Data\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Proje\Belge-Defteri\BelgeDefteri.Data\bin\Debug\Microsoft.AspNet.Identity.Owin.xml
+C:\Proje\Belge-Defteri\BelgeDefteri.Data\bin\Debug\Microsoft.Owin.xml
+C:\Proje\Belge-Defteri\BelgeDefteri.Data\bin\Debug\Microsoft.Owin.Host.SystemWeb.xml
+C:\Proje\Belge-Defteri\BelgeDefteri.Data\bin\Debug\Microsoft.Owin.Security.xml
+C:\Proje\Belge-Defteri\BelgeDefteri.Data\bin\Debug\Microsoft.Owin.Security.Cookies.xml
+C:\Proje\Belge-Defteri\BelgeDefteri.Data\bin\Debug\Microsoft.Owin.Security.OAuth.xml
+C:\Proje\Belge-Defteri\BelgeDefteri.Data\bin\Debug\Newtonsoft.Json.xml
+C:\Proje\Belge-Defteri\BelgeDefteri.Data\obj\Debug\BelgeDefteri.Data.dll
+C:\Proje\Belge-Defteri\BelgeDefteri.Data\obj\Debug\BelgeDefteri.Data.pdb
+C:\Proje\Belge-Defteri\BelgeDefteri.Data\obj\Debug\BelgeDefteri.Data.csprojResolveAssemblyReference.cache

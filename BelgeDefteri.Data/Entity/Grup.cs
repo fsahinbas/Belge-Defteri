@@ -9,8 +9,9 @@ namespace BelgeDefteri.Data.Entity
 {
     public class Grup :BaseEntity
     {
-        
-        public string ParetnId { get; set; }
+        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
+        public int ItemId { get; set; }
+        public int ParentId { get; set; }
         public string Adi { get; set; }
        
     }

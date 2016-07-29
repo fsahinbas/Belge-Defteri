@@ -12,3 +12,17 @@ c:\users\sahinbas\documents\visual studio 2013\Projects\BelgeDefteri\BelgeDefter
 c:\users\sahinbas\documents\visual studio 2013\Projects\BelgeDefteri\BelgeDefteri.Service\obj\Debug\BelgeDefteri.Service.dll
 c:\users\sahinbas\documents\visual studio 2013\Projects\BelgeDefteri\BelgeDefteri.Service\obj\Debug\BelgeDefteri.Service.pdb
 c:\users\sahinbas\documents\visual studio 2013\Projects\BelgeDefteri\BelgeDefteri.Service\bin\Debug\BelgeDefteri.Service.dll.config
+C:\Proje\Belge-Defteri\BelgeDefteri.Service\bin\Debug\BelgeDefteri.Service.dll.config
+C:\Proje\Belge-Defteri\BelgeDefteri.Service\bin\Debug\BelgeDefteri.Service.dll
+C:\Proje\Belge-Defteri\BelgeDefteri.Service\bin\Debug\BelgeDefteri.Service.pdb
+C:\Proje\Belge-Defteri\BelgeDefteri.Service\bin\Debug\BelgeDefteri.Data.dll
+C:\Proje\Belge-Defteri\BelgeDefteri.Service\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Proje\Belge-Defteri\BelgeDefteri.Service\bin\Debug\EntityFramework.dll
+C:\Proje\Belge-Defteri\BelgeDefteri.Service\bin\Debug\Microsoft.AspNet.Identity.Core.dll
+C:\Proje\Belge-Defteri\BelgeDefteri.Service\bin\Debug\BelgeDefteri.Data.pdb
+C:\Proje\Belge-Defteri\BelgeDefteri.Service\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Proje\Belge-Defteri\BelgeDefteri.Service\bin\Debug\EntityFramework.xml
+C:\Proje\Belge-Defteri\BelgeDefteri.Service\bin\Debug\Microsoft.AspNet.Identity.Core.xml
+C:\Proje\Belge-Defteri\BelgeDefteri.Service\obj\Debug\BelgeDefteri.Service.csprojResolveAssemblyReference.cache
+C:\Proje\Belge-Defteri\BelgeDefteri.Service\obj\Debug\BelgeDefteri.Service.dll
+C:\Proje\Belge-Defteri\BelgeDefteri.Service\obj\Debug\BelgeDefteri.Service.pdb

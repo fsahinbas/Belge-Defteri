@@ -39,6 +39,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="SystemService.cs" />
     <Compile Include="BaseService.cs" />
     <Compile Include="BolumService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

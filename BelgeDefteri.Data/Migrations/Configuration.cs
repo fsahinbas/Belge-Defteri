@@ -10,6 +10,7 @@ namespace BelgeDefteri.Data.Migrations
         public Configuration()
         {
             AutomaticMigrationsEnabled = true;
+            AutomaticMigrationDataLossAllowed = true;
         }
 
         protected override void Seed(BelgeDefteri.Data.Entity.ApplicationDbContext context)
