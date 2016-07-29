@@ -170,6 +170,7 @@
     <Compile Include="Api\SystemController.cs" />
     <Compile Include="Controllers\BaseController.cs" />
     <Compile Include="Controllers\BolumController.cs" />
+    <Compile Include="Controllers\KursController.cs" />
     <Compile Include="Models\VMKurs.cs" />
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
@@ -187,6 +188,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="App\App.js" />
+    <Content Include="App\Kurs\kursCtrl.js" />
     <Content Include="App\Bolum\bolumCtrl.js" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
@@ -1033,11 +1035,12 @@
     <Content Include="Views\Bolum_\Details.cshtml" />
     <Content Include="Views\Bolum_\Delete.cshtml" />
     <Content Include="Scripts\version.json" />
-    <Content Include="Views\Bolum\Index.cshtml" />
+    <Content Include="Views\Kurs\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="Views\Base\" />
+    <Folder Include="Views\Bolum\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff" />

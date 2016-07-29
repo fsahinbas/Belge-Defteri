@@ -20,11 +20,11 @@ namespace BelgeDefteri.Api
             /*
              modelden dataya aktarım
              */
-            data.KursName = model.name;
+            data.KursAdi = model.kursAdi;
             data.BelgeAdi = model.belgeAdi;
             data.BaslamaTarihi = model.baslamaTarihi;
             data.BitisTarihi = model.bitisTarihi;
-            data.MaxDevamsizlikSayisi = model.maxDevamsizlikSayisi;
+            data.MakDevamsizlikSayisi = model.makDevamsizlikSayisi;
             base.Insert(data);
             return null;
         }

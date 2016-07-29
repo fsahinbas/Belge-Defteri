@@ -10,7 +10,7 @@ namespace BelgeDefteri.Data.Entity
     {
         public string BelgeAdi { get; set; }
         public int DersSaati { get; set; }
-        public int MaxDevamsizlikSayisi { get; set; }
+        public int MakDevamsizlikSayisi { get; set; }
         public DateTime BaslamaTarihi { get; set; }
         public DateTime BitisTarihi { get; set; }
 
@@ -18,7 +18,7 @@ namespace BelgeDefteri.Data.Entity
         /// grop tablosundan Parentı Kurs olan
         /// item Id gelecek
         /// </summary>
-        public string KursName { get; set; }
+        public string KursAdi { get; set; }
 
         public virtual ICollection<Kursiyer> Kursiyer { get; set; }
         public virtual ICollection<Devamsizlik> Devamsizlik { get; set; }
