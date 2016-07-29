@@ -9,9 +9,27 @@
             <td>
                 {{data.KursName}}
             </td>
+            <td>
+                <button type="button" ng-click="del()">SİL</button>
+            </td>
         </tr>
     </table>
-
+    
+    <input ng-model="Model.id" type="text" hidden />
+    <label>Name</label>
+    <input ng-model="Model.name" type="text" />
+    <label>Belge Adı</label>
+    <input ng-model="Model.belgeAdi" type="text" />
+    <label>Ders Saati</label>
+    <input ng-model="Model.dersSaati" type="text" />
+    <label>Maksşmum Devamsızlık</label>
+    <input ng-model="Model.maxDevamsizlikSayisi" type="text" />
+    <label>Başlama Tarihi</label>
+    <input ng-model="Model.baslamaTarihi" type="date" />
+    <label>Bitiş Tarihi</label>
+    <input ng-model="Model.bitisTarihi" type="date" />
+    <p></p>
+    <button ng-click="save()" type="button">KAYDET</button>
 </div>
 
 @section Scripts
