@@ -21,4 +21,15 @@ function ($scope, $http) {
         $('#kursModal').modal('show');
     };
 
+    $scope.del = function (course) {
+        var onay = window.confirm("Silmek istediğinizden emin misiniz?")
+        if (onay) {
+            $http.post("../Api/Kurs/Delete", { Id: course.Id }).then(function () {
+                $http.post("../Api/getAll").then(function (item) {
+                    $scope.Model = item.data;
+                })
+            });
+        }
+    }
+
 }]);
