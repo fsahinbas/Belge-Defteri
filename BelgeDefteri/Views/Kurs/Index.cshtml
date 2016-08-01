@@ -1,0 +1,101 @@
+﻿@{
+    ViewBag.Title = "Index";
+}
+<style>
+   input, select, textarea{
+       max-width:none;
+   }
+</style>
+<div ng-controller="kursCtrl" class="container">
+    <div class="row">
+        <div class="col-sm-12">
+            <table class="table table-striped" style="margin-top:30px;">
+                <thead>
+                    <tr>
+                        <th hidden>Kurs ID</th>
+                        <th>Kurs Adı</th>
+                        <th>Belge Adı</th>
+                        <th>Ders Saati</th>
+                        <th>Maksimum Devamsızlık Sayısı</th>
+                        <th>Başlama Tarihi</th>
+                        <th>Bitiş Tarihi</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr ng-repeat="kurs in kurslar">
+                        <td ng-bind="kurs.Id" hidden></td>
+                        <td ng-bind="kurs.KursAdi"></td>
+                        <td ng-bind="kurs.BelgeAdi"></td>
+                        <td ng-bind="kurs.DersSaati"></td>
+                        <td ng-bind="kurs.MakDevamsizlikSayisi"></td>
+                        <td ng-bind="kurs.BaslamaTarihi"></td>
+                        <td ng-bind="kurs.BitisTarihi"></td>
+                        <td>
+                            <button type="button" class="btn btn-primary"><span class="glyphicon glyphicon-trash" aria-hidden="true"></span></button>
+                        </td>
+                        <td>
+                            <button type="button" ng-click="show(kurs)" class="btn btn-primary"><span class="glyphicon glyphicon-pencil" aria-hidden="true"></span></button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <!-- Button trigger modal -->
+    <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#kursModal">
+        Launch demo modal
+    </button>
+
+    <!-- Modal -->
+    <div class="modal fade" id="kursModal" tabindex="-1" role="dialog" aria-labelledby="kursModalLabel">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="kursModalLabel">Modal title</h4>
+                </div>
+                <div class="modal-body">
+                    <div class="container">
+                        <input ng-model="Model.id" type="text" hidden />
+                        <div class="form-group">
+                            <label class="control-label">Kurs Adı</label>
+                            <input type="text" class="form-control" ng-model="Model.KursAdi" />
+                        </div>
+                        <div class="form-group">
+                            <label class="control-label">Belge Adı</label>
+                            <input type="text" class="form-control" ng-model="Model.BelgeAdi" />
+                        </div>
+                        <div class="form-group">
+                            <label class="control-label">Ders Saati</label>
+                            {{Model.DersSaati}}
+                            <input type="text" class="form-control" ng-model="Model.DersSaati" />
+                        </div>
+                        <div class="form-group">
+                            <label class="control-label">Maksimum Devamsızlık Sayısı</label>
+                            <input type="text" class="form-control" ng-model="Model.MakDevamsizlikSayisi" />
+                        </div>
+                        <div class="form-group">
+                            <label class="control-label">Başlama Tarihi</label>
+                            <input type="date" class="form-control" ng-model="Model.BaslamaTarihi" />
+                        </div>
+                        <div class="form-group">
+                            <label class="control-label">Bitiş Tarihi</label>
+                            <input type="date" class="form-control" ng-model="Model.BitisTarihi" />
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" data-dismiss="modal"><span class="glyphicon glyphicon-remove" aria-hidden="true"></span></button>
+                    <button ng-click="save()" type="button" class="btn btn-primary"><span class="glyphicon glyphicon-floppy-disk" aria-hidden="true"></span></button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+@section Scripts
+    {
+    <script src="~/App/Kurs/kursCtrl.js"></script>
+}   
