@@ -36,6 +36,12 @@ namespace BelgeDefteri.Api
             return Request.CreateResponse(HttpStatusCode.OK, data);
         }
 
+
+        //[HttpPost]
+        //public HttpResponseMessage Kursgetby(string Id)
+        //{
+        //    var data = base.GetById(Id);
+        //}
        
 
 
