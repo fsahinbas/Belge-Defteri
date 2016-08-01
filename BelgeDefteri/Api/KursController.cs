@@ -15,8 +15,6 @@ namespace BelgeDefteri.Api
         public ActionResult Insert(VMKurs model)
         {
             var data = new Kurs();
-         
-            
             /*
              modelden dataya aktarım
              */
@@ -25,6 +23,7 @@ namespace BelgeDefteri.Api
             data.BaslamaTarihi = model.baslamaTarihi;
             data.BitisTarihi = model.bitisTarihi;
             data.MakDevamsizlikSayisi = model.makDevamsizlikSayisi;
+            data.DersSaati = model.dersSaati;
             base.Insert(data);
             return null;
         }
