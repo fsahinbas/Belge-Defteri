@@ -15,9 +15,7 @@ namespace BelgeDefteri.Api
         public bool insert(VMKurs model)
         {
             var data = new Kurs();
-            /*
-             modelden dataya aktarım
-             */
+         
             if (model == null)
             {
                 return false;
@@ -59,8 +57,9 @@ namespace BelgeDefteri.Api
 
         }
 
+      
         [HttpPost]
-        public bool sil(string Id)
+        public bool del(string Id)
         {
             if (Id==null)
             {
@@ -100,8 +99,5 @@ namespace BelgeDefteri.Api
             }       
             return Request.CreateResponse(HttpStatusCode.OK, model);
         }
-
-
-
     }
 }
