@@ -10,22 +10,68 @@ using System.Web.Mvc;
 
 namespace BelgeDefteri.Api
 {
-    public class KursController:BaseController<Kurs>
+    public class KursController : BaseController<Kurs>
     {
-        public ActionResult Insert(VMKurs model)
+        public bool insert(VMKurs model)
         {
             var data = new Kurs();
             /*
              modelden dataya aktarım
              */
+            if (model == null)
+            {
+                return false;
+            }
+            else
+            {
+                data.KursAdi = model.kursAdi;
+                data.BelgeAdi = model.belgeAdi;
+                data.BaslamaTarihi = model.baslamaTarihi;
+                data.BitisTarihi = model.bitisTarihi;
+                data.MakDevamsizlikSayisi = model.makDevamsizlikSayisi;
+                data.DersSaati = model.dersSaati;
+                base.Insert(data);
+                return true;
+            }
+
+        }
+
+        public bool update(VMKurs model)
+        {
+            var data = new Kurs();
+
+            if (model==null)
+            {
+                return false;    
+            }
+            else
+            { 
+            data.Id = model.id;
             data.KursAdi = model.kursAdi;
             data.BelgeAdi = model.belgeAdi;
             data.BaslamaTarihi = model.baslamaTarihi;
             data.BitisTarihi = model.bitisTarihi;
             data.MakDevamsizlikSayisi = model.makDevamsizlikSayisi;
             data.DersSaati = model.dersSaati;
-            base.Insert(data);
-            return null;
+            base.Update(data);
+            return true;
+            }
+
+        }
+
+        [HttpPost]
+        public bool sil(string Id)
+        {
+            if (Id==null)
+            {
+                return false;
+            }
+            else
+            {
+            var data = base.GetById(Id);
+            base.Delete(data);
+            return true;
+            }
         }
 
 
@@ -37,12 +83,24 @@ namespace BelgeDefteri.Api
         }
 
 
-        //[HttpPost]
-        //public HttpResponseMessage Kursgetby(string Id)
-        //{
-        //    var data = base.GetById(Id);
-        //}
-       
+        [HttpPost]
+        public HttpResponseMessage getById(string Id)
+        {
+            var data = base.GetById(Id);
+            var model = new VMKurs();
+            if (data!=null)
+            {
+                model.id=data.Id;
+                model.kursAdi = data.KursAdi;
+                model.belgeAdi = data.BelgeAdi;
+                model.baslamaTarihi = data.BaslamaTarihi;
+                model.bitisTarihi = data.BitisTarihi;
+                model.makDevamsizlikSayisi = data.MakDevamsizlikSayisi;
+                model.dersSaati = data.DersSaati;
+            }       
+            return Request.CreateResponse(HttpStatusCode.OK, model);
+        }
+
 
 
     }

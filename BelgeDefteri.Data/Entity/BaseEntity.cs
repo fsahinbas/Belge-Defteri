@@ -14,8 +14,10 @@ namespace BelgeDefteri.Data.Entity
         [Key]
         public string Id { get; set; }
         public string CreateUser { get; set; }
+       [Column(TypeName = "datetime2")]
         public DateTime CreatDate { get; set; }
         public string UpdateUser { get; set; }
+        [Column(TypeName = "datetime2")]
         public DateTime UpdateDate { get; set; }
     }
 }
