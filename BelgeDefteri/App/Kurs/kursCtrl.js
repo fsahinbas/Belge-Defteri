@@ -7,12 +7,11 @@ function ($scope, $http) {
     });
 
     $scope.save = function () {
-        $http.post("../Api/Kurs/Insert", $scope.Model).then(function (item) {
+        $http.post("../Api/Kurs/insert", $scope.Model).then(function (item) {
             $scope.Model = item.data;
         })
     };
 
-    //Seçilen kursa ait data modala aktarılıyor
 
     $scope.show = function (course) {
         console.log(course);
@@ -24,9 +23,9 @@ function ($scope, $http) {
     $scope.del = function (course) {
         var onay = window.confirm("Silmek istediğinizden emin misiniz?")
         if (onay) {
-            $http.post("../Api/Kurs/Delete", { Id: course.Id }).then(function () {
-                $http.post("../Api/getAll").then(function (item) {
-                    $scope.Model = item.data;
+            $http.post("../Api/Kurs/del/"+course.Id).then(function () {
+                $http.get("../Api/Kurs/getAll").then(function (data) {
+                    $scope.kurslar = data.data;
                 })
             });
         }
