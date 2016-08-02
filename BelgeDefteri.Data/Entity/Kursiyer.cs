@@ -13,7 +13,7 @@ namespace BelgeDefteri.Data.Entity
         public string TcKimlik { get; set; }
         public int OkulNo { get; set; }
         public string Name { get; set; }
-        public string SureName { get; set; }
+        public string SurName { get; set; }
 
         [ForeignKey("Sinif")]
         public string SinifId { get; set; }

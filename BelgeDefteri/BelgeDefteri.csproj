@@ -166,11 +166,17 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Api\BaseController.cs" />
+    <Compile Include="Api\BelgeController.cs" />
+    <Compile Include="Api\BolumController.cs" />
     <Compile Include="Api\KursController.cs" />
+    <Compile Include="Api\KursiyerController.cs" />
+    <Compile Include="Api\SinifController.cs" />
     <Compile Include="Api\SystemController.cs" />
     <Compile Include="Controllers\BaseController.cs" />
     <Compile Include="Controllers\BolumController.cs" />
     <Compile Include="Controllers\KursController.cs" />
+    <Compile Include="Models\VMBelge.cs" />
+    <Compile Include="Models\VMBolum.cs" />
     <Compile Include="Models\VMKurs.cs" />
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
@@ -183,6 +189,8 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Models\VMKursiyer.cs" />
+    <Compile Include="Models\VMSinif.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
   </ItemGroup>
@@ -1040,7 +1048,10 @@
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="Views\Base\" />
+    <Folder Include="Views\Belge\" />
     <Folder Include="Views\Bolum\" />
+    <Folder Include="Views\Kursiyer\" />
+    <Folder Include="Views\Sinif\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
