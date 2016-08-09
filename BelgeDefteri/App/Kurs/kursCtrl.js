@@ -12,12 +12,16 @@ function ($scope, $http) {
         })
     };
 
+    $scope.update = function () {
+        $http.post("../Api/Kurs/update", $scope.Model).then(function (item) {
+            $scope.Model = item.data;
+        })
+    };
 
     $scope.show = function (course) {
-        console.log(course);
         $scope.Model = course;
         console.log($scope.Model);
-        $('#kursModal').modal('show');
+        $('#updateKursModal').modal('show');
     };
 
     $scope.del = function (course) {
