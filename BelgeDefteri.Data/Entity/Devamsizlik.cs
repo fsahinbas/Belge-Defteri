@@ -7,10 +7,8 @@ using System.Text;
 
 namespace BelgeDefteri.Data.Entity
 {
-    public class Devamsizlik
+    public class Devamsizlik:BaseEntity
     {
-        [Key]
-        public string Id { get; set; }
         public DateTime Tarih { get; set; }
         public int DevamsizlikMiktari { get; set; }
         [ForeignKey("Kurs")]

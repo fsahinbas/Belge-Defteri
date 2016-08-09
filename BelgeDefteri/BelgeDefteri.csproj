@@ -168,6 +168,7 @@
     <Compile Include="Api\BaseController.cs" />
     <Compile Include="Api\BelgeController.cs" />
     <Compile Include="Api\BolumController.cs" />
+    <Compile Include="Api\DevamsizlikController.cs" />
     <Compile Include="Api\KursController.cs" />
     <Compile Include="Api\KursiyerController.cs" />
     <Compile Include="Api\SinifController.cs" />
@@ -175,6 +176,7 @@
     <Compile Include="Controllers\BaseController.cs" />
     <Compile Include="Controllers\BolumController.cs" />
     <Compile Include="Controllers\KursController.cs" />
+    <Compile Include="Models\VMDevamsizlik.cs" />
     <Compile Include="Models\VMBelge.cs" />
     <Compile Include="Models\VMBolum.cs" />
     <Compile Include="Models\VMKurs.cs" />
@@ -1050,6 +1052,7 @@
     <Folder Include="Views\Base\" />
     <Folder Include="Views\Belge\" />
     <Folder Include="Views\Bolum\" />
+    <Folder Include="Views\Devamsizlik\" />
     <Folder Include="Views\Kursiyer\" />
     <Folder Include="Views\Sinif\" />
   </ItemGroup>
