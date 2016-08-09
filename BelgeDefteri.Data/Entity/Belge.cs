@@ -14,8 +14,8 @@ namespace BelgeDefteri.Data.Entity
         public DateTime BelgeTarih { get; set; }
         public string Egitmen { get; set; }
         public string Idareci { get; set; }
-        public string BasimTarihi { get; set; }
-        public bool BasiidiMi { get; set; }
+        public DateTime BasimTarihi { get; set; }
+        public bool BasildiMi { get; set; }
 
         [ForeignKey("Kursiyer")]
         public string KursiyerId { get; set; }
